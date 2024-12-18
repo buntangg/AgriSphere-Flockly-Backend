@@ -1,10 +1,10 @@
 import mysql from "mysql2";
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || "localhost", // Ganti dengan alamat host MySQL kamu
-  user: process.env.DB_USER || "root", // Ganti dengan username MySQL kamu
-  password: process.env.DB_PASSWORD || "", // Ganti dengan password MySQL kamu
-  database: process.env.DB_NAME || "flockly_db", // Nama database yang kamu buat sebelumnya
+  host: process.env.DB_HOST || "localhost", 
+  user: process.env.DB_USER || "root", 
+  password: process.env.DB_PASSWORD || "", 
+  database: process.env.DB_NAME || "flockly_db", 
 });
 
 db.connect((err) => {
